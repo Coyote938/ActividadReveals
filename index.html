@@ -126,7 +126,11 @@
 						</a>
 					</section>
 					<section data-auto-animate >
-						<audio src="examples/assets/musicaFondo.mp3" data-autoplay></audio>
+						<audio id="myaudio" src="examples/assets/musicaFondo.mp3" data-autoplay loop="loop"></audio>
+						<script>
+							var audio = document.getElementById("myaudio");
+							audio.volume = 0.1;
+						</script>
 						<h2 style="margin-top: 100px; color: rgb(210, 221, 180);">Video explicativo Chis pum</h2>
 						<div class="r-hstack justify-center">
 							<div data-id="box1" data-auto-animate-delay="0" style="background: rgb(142, 119, 223); width: 150px; height: 100px; margin: 10px;"></div>
